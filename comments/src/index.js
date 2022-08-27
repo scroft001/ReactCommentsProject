@@ -19,13 +19,15 @@ const App = () => {
                 commentText='bye there' 
                 avatarImage={faker.image.avatar()}
             />
-            <CommentDetail 
-                author='Adam' 
-                timeAgo='Today at 1:08PM' 
-                commentText='Chicken' 
-                avatarImage={faker.image.avatar()}
-            />
-            <ApprovalCard />
+            
+            <ApprovalCard>
+                <CommentDetail 
+                    author='Adam' 
+                    timeAgo='Today at 1:08PM' 
+                    commentText='Chicken' 
+                    avatarImage={faker.image.avatar()}
+                />
+            </ApprovalCard>
         </div> 
     ); 
 }; 
